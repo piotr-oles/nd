@@ -2,44 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bfb1ee8-02b6-4957-a8c7-355c773b426e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Geometry/ExpandByPermutationAlgorithm.js" afterPath="$PROJECT_DIR$/src/Algorithms/Geometry/ExpandByPermutationAlgorithm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Geometry/ExpandByTranslationAlgorithm.js" afterPath="$PROJECT_DIR$/src/Algorithms/Geometry/ExpandByTranslationAlgorithm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Geometry/FindFacesAlgorithm.js" afterPath="$PROJECT_DIR$/src/Algorithms/Geometry/FindFacesAlgorithm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Geometry/FindTrianglesAlgorithm.js" afterPath="$PROJECT_DIR$/src/Algorithms/Geometry/FindTrianglesAlgorithm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Geometry/IncraseComplexityAlgorithm.js" afterPath="$PROJECT_DIR$/src/Algorithms/Geometry/IncraseComplexityAlgorithm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Geometry/TriangulateAlgorithm.js" afterPath="$PROJECT_DIR$/src/Algorithms/Geometry/TriangulateAlgorithm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Geometry/WalkAlgorithm.js" afterPath="$PROJECT_DIR$/src/Algorithms/Geometry/WalkAlgorithm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Animator.js" afterPath="$PROJECT_DIR$/src/Animator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Cameras/HybridCamera.js" afterPath="$PROJECT_DIR$/src/Cameras/HybridCamera.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Cameras/OrtographicCamera.js" afterPath="$PROJECT_DIR$/src/Cameras/OrtographicCamera.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Cameras/PerspectiveCamera.js" afterPath="$PROJECT_DIR$/src/Cameras/PerspectiveCamera.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Cameras/StereographicCamera.js" afterPath="$PROJECT_DIR$/src/Cameras/StereographicCamera.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Canvas.js" afterPath="$PROJECT_DIR$/src/Canvas.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Geometries/HyperCubeGeometry.js" afterPath="$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Geometries/HyperOctahedronGeometry.js" afterPath="$PROJECT_DIR$/src/Geometries/HyperOctahedronGeometry.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Geometries/HyperQuadrangularPyramidGeometry.js" afterPath="$PROJECT_DIR$/src/Geometries/HyperQuadrangularPyramidGeometry.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Geometries/HyperSphereGeometry.js" afterPath="$PROJECT_DIR$/src/Geometries/HyperSphereGeometry.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Materials/HyperDepthMaterial.js" afterPath="$PROJECT_DIR$/src/Materials/HyperDepthMaterial.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Math/Extend.js" afterPath="$PROJECT_DIR$/src/Math/Extend.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Math/Geometry.js" afterPath="$PROJECT_DIR$/src/Math/Geometry.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Math/Matrix.js" afterPath="$PROJECT_DIR$/src/Math/Matrix.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Math/Plane.js" afterPath="$PROJECT_DIR$/src/Math/Plane.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Math/Sequence.js" afterPath="$PROJECT_DIR$/src/Math/Sequence.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Math/Vector.js" afterPath="$PROJECT_DIR$/src/Math/Vector.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Primitives/Camera.js" afterPath="$PROJECT_DIR$/src/Primitives/Camera.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Primitives/Item.js" afterPath="$PROJECT_DIR$/src/Primitives/Item.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Primitives/Material.js" afterPath="$PROJECT_DIR$/src/Primitives/Material.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Primitives/Scene.js" afterPath="$PROJECT_DIR$/src/Primitives/Scene.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Programs/GeometryGenerator.js" afterPath="$PROJECT_DIR$/src/Programs/GeometryGenerator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Promise.js" afterPath="$PROJECT_DIR$/src/Promise.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Renderer.js" afterPath="$PROJECT_DIR$/src/Renderer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/tests.js" afterPath="$PROJECT_DIR$/tests/tests.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Thread.js" afterPath="$PROJECT_DIR$/src/Thread.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WebGL.js" afterPath="$PROJECT_DIR$/src/WebGL.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cameras/BasicCamera.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cameras/Camera.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cameras/OrthographicCamera.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Primitives/Point.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Cameras/OrtographicCamera.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Cameras/StereographicCamera.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Animator.js" afterPath="$PROJECT_DIR$/src/Animator.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Cameras/HybridCamera.js" afterPath="$PROJECT_DIR$/src/Cameras/HybridCamera.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Cameras/PerspectiveCamera.js" afterPath="$PROJECT_DIR$/src/Cameras/PerspectiveCamera.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Canvas.js" afterPath="$PROJECT_DIR$/src/Canvas.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Renderer.js" afterPath="$PROJECT_DIR$/src/Renderer.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,39 +24,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Renderer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Renderer.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="190">
+              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Thread.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Thread.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HyperCubeGeometry.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.js">
+      <file leaf-file-name="HybridCamera.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cameras/HybridCamera.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -90,17 +45,92 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebGL.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebGL.ts">
+      <file leaf-file-name="PerspectiveCamera.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cameras/PerspectiveCamera.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+            <state relative-caret-position="171">
+              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Camera.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Primitives/Camera.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="34" column="30" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="34" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Camera.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cameras/Camera.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Point.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Primitives/Point.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicCamera.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cameras/BasicCamera.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrthographicCamera.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cameras/OrthographicCamera.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Animator.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Animator.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-263">
+              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Canvas.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Canvas.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>initContext</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,6 +143,18 @@
         <option value="$PROJECT_DIR$/src/WebGL.js" />
         <option value="$PROJECT_DIR$/src/WebGL.ts" />
         <option value="$PROJECT_DIR$/src/Thread.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/Canvas.ts" />
+        <option value="$PROJECT_DIR$/src/Animator.ts" />
+        <option value="$PROJECT_DIR$/src/Renderer.ts" />
+        <option value="$PROJECT_DIR$/src/Cameras/BasicCamera.ts" />
+        <option value="$PROJECT_DIR$/src/Cameras/StereographicCamera.js" />
+        <option value="$PROJECT_DIR$/src/Cameras/PerspectiveCamera.ts" />
+        <option value="$PROJECT_DIR$/src/Primitives/Point.ts" />
+        <option value="$PROJECT_DIR$/src/Cameras/Camera.ts" />
+        <option value="$PROJECT_DIR$/src/Cameras/OrtographicCamera.ts" />
+        <option value="$PROJECT_DIR$/src/Cameras/OrthographicCamera.ts" />
+        <option value="$PROJECT_DIR$/src/Cameras/HybridCamera.ts" />
       </list>
     </option>
   </component>
@@ -124,6 +166,9 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -149,6 +194,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,13 +211,18 @@
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Geometries" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Cameras" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Primitives" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,6 +249,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0bfb1ee8-02b6-4957-a8c7-355c773b426e" name="Default" comment="" />
@@ -205,35 +259,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511001983812</updated>
-      <workItem from="1511001985037" duration="1084000" />
+      <workItem from="1511001985037" duration="1341000" />
+      <workItem from="1511014402116" duration="2451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1084000" />
+    <option name="totallyTimeSpent" value="3792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="-4" width="1317" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24941176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -248,18 +303,66 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/IncraseComplexityAlgorithm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/FindTrianglesAlgorithm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/ExpandByTranslationAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/ExpandByPermutationAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/WalkAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/HybridCamera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/OrthographicCamera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/StereographicCamera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -272,6 +375,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Thread.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebGL.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -280,10 +406,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/TriangulateAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/IncraseComplexityAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/FindTrianglesAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/ExpandByTranslationAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/ExpandByPermutationAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms/Geometry/WalkAlgorithm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2068">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Thread.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="-247">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="10270" column="4" lean-forward="false" selection-start-line="10270" selection-start-column="4" selection-end-line="10270" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Canvas.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Renderer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-263">
+          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Primitives/Camera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="34" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/StereographicCamera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Primitives/Point.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/OrthographicCamera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/PerspectiveCamera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/BasicCamera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/Camera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cameras/HybridCamera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
