@@ -1,0 +1,15 @@
+{
+  "name": "nd",
+  "version": "1.0.0",
+  "description": "N-Dimensional Graphic Engine",
+  "main": "index.js",
+  "repository": "git@github.com:piotr-oles/nd.git",
+  "author": "Piotr Oleś <piotr.oles@codibly.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "fork-ts-checker-webpack-plugin": "^0.2.8",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1"
+  }
+}

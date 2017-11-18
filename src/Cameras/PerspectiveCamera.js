@@ -1,5 +1,5 @@
 define([
-    '../Primitives/Camera'
+    '../src/Primitives/Camera'
 ], function(Camera) {
     "use strict";
     
