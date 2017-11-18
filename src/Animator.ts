@@ -1,6 +1,7 @@
 // shim layer
 import { Renderer } from './Renderer';
 import { Canvas } from './Canvas';
+import { Camera } from './Primitive/Camera';
 
 const requestAnimationFrame = (
   window.requestAnimationFrame ||
@@ -28,7 +29,7 @@ export class Animator {
     private canvas: Canvas,
     private renderer: Renderer,
     private scene,
-    private camera,
+    private camera: Camera,
     private procedure: AnimationProcedure
   ) {}
 
@@ -49,7 +50,7 @@ export class Animator {
     this.procedure();
   };
 
-  frame(persist) {
+  frame(persist: boolean) {
     this.renderer.render(this.scene, this.camera, this.canvas, persist);
     ++this.index;
   }

@@ -1,5 +1,5 @@
 
-import { HyperPoint, Point } from '../Primitives/Point';
+import { HyperPoint, Point } from './Point';
 
 export interface Camera {
   projectPoint(hyperPoint: HyperPoint): Point

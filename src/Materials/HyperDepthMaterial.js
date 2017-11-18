@@ -1,5 +1,5 @@
 define([
-    '../Primitives/Material',
+    '../Primitive/Material',
     '../Math/Vector'
 ], function(Material, Vector) {
     var HyperDepthMaterial = function(parameters) {

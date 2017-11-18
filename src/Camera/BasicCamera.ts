@@ -1,5 +1,5 @@
 
-import { Camera } from './Camera';
+import { Camera } from '../Primitive/Camera';
 
 export abstract class BasicCamera implements Camera {
   abstract projectPoint(hyperPoint: number[]): [number, number];

@@ -6,7 +6,7 @@ export class PerspectiveCamera extends BasicCamera {
     super();
   }
 
-  projectPoint(hyperPoint: number[]) {
+  projectPoint(hyperPoint) {
     const point = hyperPoint.slice(0);
 
     for (let d = point.length; d > 2; --d) {

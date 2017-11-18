@@ -1,5 +1,7 @@
 import { WebGL } from './WebGL';
 import { Canvas } from './Canvas';
+import { Camera } from './Primitive/Camera';
+import { Scene } from './Primitive/Scene';
 
 export class Renderer {
   private mode: number = WebGL.TRIANGLES;
@@ -8,15 +10,15 @@ export class Renderer {
     this.mode = options.mode;
   };
 
-  render(scene, camera, canvas: Canvas, persists) {
+  render(scene: Scene, camera: Camera, canvas: Canvas, persists) {
     const gl = canvas.getContext();
 
     if (!persists) {
       gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     }
 
-    for (let name in scene.items) {
-      let item = scene.items[name];
+    for (let name in scene.getItems()) {
+      let item = scene.getItem[name];
       let geometryND = item.matrix ? item.geometry.transform(item.matrix) : item.geometry;
       let geometry2D = camera.projectGeometry(geometryND);
       let material = item.material;
