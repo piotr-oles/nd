@@ -1,0 +1,143 @@
+define(function() {
+    "use strict";
+    
+    // permutation module
+    (function(Math) {
+        var buildPermutations = function(set, pointer, permutations) {
+            var setLength = set.length;
+            
+            if (pointer === setLength) {
+                permutations.push(set);
+            } else {
+                var permutation;
+                
+                for (var i = pointer; i < setLength; ++i) {
+                    permutation = set.slice(0);
+
+                    permutation[pointer] = set[i];
+                    permutation[i]       = set[pointer];
+
+                    buildPermutations(permutation, pointer + 1, permutations);
+                }
+            }
+        };
+                
+        var buildVariations = function(set, k, withRepeat, result, variations) {
+            if (k === result.length) {
+                variations.push(result);
+            } else {
+                var setLength = set.length,
+                    variation, subset;
+
+                for (var i = 0; i < setLength; ++i) {
+                    variation = result.slice(0);
+                    variation.push(set[i]);
+                    
+                    subset = set.slice(0);
+                    
+                    if (!withRepeat) {
+                        subset.splice(i, 1);
+                    }
+                    
+                    buildVariations(subset, k, withRepeat, variation, variations);
+                }
+            }
+        };
+        
+        var buildCombinations = function(set, k, withRepeat, result, combinations) {
+            if (k === result.length) {
+                combinations.push(result);
+            } else {
+                var setLength = set.length,
+                    subset    = set.slice(0),
+                    combination;
+                
+                for (var i = 0; i < setLength; ++i) {
+                    subset      = subset.slice(0);
+                    combination = result.slice(0);
+                    combination.push(set[i]);
+                    
+                    subset.shift();
+                    
+                    if (subset.length >= combination) {
+                        buildCombinations(subset, k, withRepeat, combination, combinations);
+                    }
+                }
+            }
+        };
+        
+        Math.permutations = function(set) {
+            var permutations = [];
+            buildPermutations(set, 0, permutations);
+            
+            return permutations;
+        };
+        
+        Math.variations = function(set, k, withRepeat) {
+            var variations = [];
+            buildVariations(set, k, !!withRepeat, [], variations);
+            
+            return variations;
+        };
+        
+        Math.combinations = function(set, k, withRepeat) {
+            var combinations = [];
+            buildCombinations(set, k, !!withRepeat, [], combinations);
+            
+            return combinations;
+        };
+    })(Math);
+    
+    // radians/degrees conversion module
+    (function(Math) {
+        Math.RAD_TO_DEG = 180 / Math.PI;
+        Math.DEG_TO_RAD = Math.PI / 180;
+
+        Math.degrees = function(radians) {
+            return radians * Math.RAD_TO_DEG;
+        };
+
+        Math.radians = function(degrees) {
+            return degrees * Math.DEG_TO_RAD;
+        };
+    })(Math);
+
+    // float point error
+    (function(Math, Number) {
+        if (!Number.EPSILON) {
+            Number.EPSILON = 2.2204460492503130808472633361816E-16;
+        }
+
+        Math.nearlyEqual = function(a, b, epsilon) {
+            var delta = Math.abs(a - b);
+
+            if (!epsilon) {
+                epsilon = Number.EPSILON;
+            }
+                        
+            if (a === b) {
+                return true;
+            } else if (0 === a || 0 === b || delta < Number.MIN_VALUE) {
+                return delta < (epsilon * Number.MIN_VALUE);
+            } else {
+                return delta / (Math.abs(a) + Math.abs(b)) < epsilon;
+            }
+        };
+nearlyEqual(float a, float b, float epsilon) {
+		final float absA = Math.abs(a);
+		final float absB = Math.abs(b);
+		final float diff = Math.abs(a - b);
+
+		if (a == b) { // shortcut, handles infinities
+			return true;
+		} else if (a == 0 || b == 0 || diff < Float.MIN_NORMAL) {
+			// a or b is zero or both are extremely close to it
+			// relative error is less meaningful here
+			return diff < (epsilon * Float.MIN_NORMAL);
+		} else { // use relative error
+			return diff / (absA + absB) < epsilon;
+		}
+    })(Math, Number);
+    
+    return Math;
+});

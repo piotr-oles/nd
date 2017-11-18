@@ -1,0 +1,145 @@
+define(function() {
+    "use strict";
+    
+    var Graph = function() {
+        this.nodes = [];
+    };
+    
+    Graph.prototype = {
+        constructor: Graph,
+                
+        nodes: [],
+
+        addNode: function(data, siblings) {
+            var id = this.nodes.length;
+
+            this.nodes[id] = {
+                id:       id,
+                siblings: (siblings || []),
+                data:     data
+            };
+
+            return this.nodes[id];
+        },
+                
+        removeNode: function(id) {
+            delete this.nodes[id];
+        },
+                
+        getNode: function(id) {
+            return this.nodes[id];
+        },
+        
+        getNodes: function() {
+            return this.nodes;
+        },
+        
+        getData: function(id) {
+            return this.nodes[id].data;
+        },
+        
+        getSiblings: function(id) {
+            return this.nodes[id].siblings;
+        },
+        
+        setSiblings: function(id, siblings) {
+            this.nodes[id].siblings = siblings;
+        },
+        
+        addEdge: function(idA, idB) {
+            this.nodes[idA].siblings.push(idB);
+        },
+                
+        addEdgeDouble: function(idA, idB) {
+            this.addEdge(idA, idB);
+            this.addEdge(idB, idA);
+        },
+        
+        removeEdge: function(idA, idB) {
+            var siblingIndex = this.nodes[idA].siblings.indexOf(idB);
+            
+            if (-1 !== siblingIndex) {
+                this.nodes[idA].siblings.splice(siblingIndex, 1);
+            }
+        },
+                
+        removeEdgeDouble: function(idA, idB) {
+            this.removeEdge(idA, idB);
+            this.removeEdge(idB, idA);
+        },
+        
+        eachNode: function(callback) {
+            var graphLength = this.nodes.length;
+
+            for (var id = 0; id < graphLength; ++id) {
+                callback.call(this, id, this.nodes[id]);
+            }
+        }
+    };
+    
+    Graph.clone = function(sourceGraph) {
+        var targetGraph = new Graph,
+            clonedData, clonedSiblings;
+        
+        sourceGraph.eachNode(function(id, node) {
+            clonedData     = node.data;
+            clonedSiblings = node.siblings.slice(0);
+            console.log(node);
+            if (undefined !== clonedData && null !== cloneData) {
+                switch (Object.prototype.toString.call(cloneData).match(/^\[object\s(.*)\]$/)[1]) {
+                    case 'Boolean':
+                    case 'Number':
+                    case 'String':
+                        break;
+                    case 'Array':
+                        clonedData = clonedData.slice(0);
+                        break;
+                    default:
+                        if ('clone' in clonedData.constructor) {
+                            clonedData = clonedData.constructor.clone(clonedData);
+                        }
+                }
+            }
+
+            targetGraph.addNode(clonedData, clonedSiblings);
+        });
+        
+        return targetGraph;        
+    };
+    
+    Graph.Algorithm = {};
+    
+    var findCycle = function(graph, node, visited, cycles, max, canWalk) {
+        visited.push(node);
+        
+        var siblings       = graph.getSiblings(node),
+            siblingsLength = siblings.length,
+            visitedLength  = visited.length;
+        
+        for (var i = 0; i < siblingsLength; ++i) {
+            if (visitedLength > 1 && visited[visitedLength - 2] === siblings[i]) {
+                continue;
+            }
+            
+            if (-1 === visited.indexOf(siblings[i]) && (!max || max < visitedLength) && (!canWalk || canWalk(visited, siblings[i]))) {
+                findCycle(graph, siblings[i], visited, cycles, max, canWalk);
+            } else if (visited[0] === siblings[i]) {
+                cycles.push(visited);
+            }
+        }
+    };
+    
+    Graph.Algorithm.findCycles = function(graph, max, canWalk) {
+        var temp   = Graph.clone(graph),
+            cycles = [];
+        
+        temp.eachNode(function(id) {
+            findCycle(temp, id, [], cycles, max, canWalk);
+            temp.removeNode(id);
+        });
+        
+        return cycles;        
+    };
+    
+    return Graph;
+});

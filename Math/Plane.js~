@@ -1,0 +1,84 @@
+define([
+    './Matrix',
+    './Extend'
+],
+function(Matrix, Math) {
+    "use strict";
+    
+    var Plane = {
+        buildEquation: function(vectorA, vectorB, vectorC) {
+            var dimension        = vectorA.length,
+                axes             = [],
+                axesCombinations = [],
+                equationFactors  = [],
+                axesCombination,
+                equationMatrix;
+
+            for (var a = 0; a < dimension; ++a) {
+                axes.push(a);
+            }
+
+            axesCombinations = Math.combinations(axes, 3);
+            
+            for (var c = 0; c < axesCombinations.length; ++c) {
+                axesCombination = axesCombinations[c];                
+                equationMatrix  = Matrix.build(4, 1.0);
+                
+                for (var d = 0; d < 3; ++d) {
+                    equationMatrix[4  + d] = vectorA[axesCombination[d]];
+                    equationMatrix[8  + d] = vectorB[axesCombination[d]];
+                    equationMatrix[12 + d] = vectorC[axesCombination[d]];
+                }
+                                
+                equationFactors.push([
+                    axesCombination.slice(0),
+                    Matrix.resolve(equationMatrix)
+                ]);
+            }
+            
+            return (function(equation, equationFactors) {
+                return function(vectorA) {
+                    var satisfies = true;
+                    
+                    for (var e = 0, result = 0; e < equation; ++e) {
+                        for (var dE = 0, dV = e; dE < 3; ++dV, ++dE) {
+                            result += vectorA[dV] * equationFactors[e][dE];
+                        }
+                        
+                        result += equationFactors[e][3];
+                                                
+                        if (!Math.nearlyEqual(result, 0)) {
+                            satisfies = false;
+                            break;
+                        }
+                    }
+                    
+                    return satisfies;
+                };
+            })(equation, equationFactors);
+        },
+
+        satisfiesEquation: function(vectorA, equationFactors) {
+            var combinations, factors;
+
+            for (var c = 0, result = 0; c < equationFactors.length; ++c) {
+                combinations = equationFactors[c][0];
+                factors      = equationFactors[c][1];
+                
+                for (var d = 0; d < 3; ++d) {
+                    result += vectorA[combinations[d]] * factors[combinations[d]];
+                }
+
+                result += factors[3];
+
+                if (!Math.nearlyEqual(result, 0)) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    };
+    
+    return Plane;
+});

@@ -1,0 +1,455 @@
+define([
+   'nd/math/Vector',
+   'nd/math/Matrix',
+   'nd/math/Extend',
+   'nd/math/Plane'
+], function(Vector, Matrix, Math, Plane) {
+    "use strict";
+    
+    var Geometry = function(dimension) {
+        this.dimension = dimension || 0;
+        this.siblings  = [];
+        this.vectors   = [];
+        this.faces     = [];
+        this.origin    = Vector.build(this.dimension, 0.0);
+    };
+    
+    Geometry.prototype = {
+        constructor: Geometry,
+        
+        dimension: 0,
+        siblings:  [],
+        vectors:   [],
+        faces:     [],
+        origin:    [],
+
+        addVertex: function(vector, siblings) {
+            var vertexId = this.siblings.length;
+
+            this.siblings[vertexId] = (siblings || []);
+            this.vectors [vertexId] = (vector   || []);
+            
+            return vertexId;
+        },
+        
+        getVertex: function(vertexId) {
+            return {
+                siblings: this.siblings[vertexId],
+                vector:   this.vectors [vertexId]
+            };
+        },
+                
+        removeVertex: function(vertexId) {
+            var siblings = this.siblings,
+                faces    = this.faces,
+                siblingIndex, vertexIndex;
+            
+            this.eachVertex(function(currentVertexId) {
+                if (vertexId !== currentVertexId) {
+                    while (-1 !== (siblingIndex = siblings[currentVertexId].indexOf(vertexId))) {
+                        siblings[currentVertexId].splice(siblingIndex, 1);
+                    }
+                }
+            });
+            
+            this.eachFace(function(currentFaceId) {
+                while (-1 !== (vertexIndex = faces[currentFaceId].indexOf(vertexId))) {
+                    faces[currentFaceId].splice(vertexIndex, 1);
+                }
+                
+                if (faces[currentFaceId].length < 3) {
+                    this.removeFace(currentFaceId);
+                }
+            });
+            
+            delete this.siblings[vertexId];
+            delete this.vectors [vertexId];
+        },
+        
+        removeVertices: function() {
+            this.siblings = [];
+            this.vectors  = [];
+        },
+        
+        addEdge: function(vertexIdA, vertexIdB) {
+            this.siblings[vertexIdA].push(vertexIdB);
+        },
+        
+        removeEdge: function(vertexIdA, vertexIdB) {
+            var siblings     = this.siblings,
+                siblingIndex = siblings[vertexIdA].indexOf(vertexIdB);
+            
+            if (-1 !== siblingIndex) {
+                siblings[vertexIdA].splice(siblingIndex, 1);
+            }
+        },
+                
+        addEdgeDouble: function(vertexIdA, vertexIdB) {
+            this.addEdge(vertexIdA, vertexIdB);
+            this.addEdge(vertexIdB, vertexIdA);
+        },
+                
+        removeEdgeDouble: function(vertexIdA, vertexIdB) {
+            this.removeEdge(vertexIdA, vertexIdB);
+            this.removeEdge(vertexIdB, vertexIdA);
+        },
+        
+        removeEdges: function() {
+            this.eachVertex(function(vertexId) {
+                if (this.siblings[vertexId]) {
+                    this.siblings[vertexId] = [];
+                }
+            });
+        },
+        
+        addFace: function(face) {
+            var faceId = this.faces.length;
+            
+            this.faces[faceId] = face;
+            
+            return faceId;
+        },
+        
+        getFace: function(faceId) {
+            return this.faces[faceId];
+        },
+        
+        removeFace: function(faceId) {
+            delete this.faces[faceId];
+        },
+        
+        removeFaces: function() {
+            this.faces = [];
+        },
+        
+        eachVertex: function(callback, context) {
+            var siblings       = this.siblings,
+                siblingsLength = siblings.length;
+            
+            context || (context = this);
+            
+            for (var vertexId = 0; vertexId < siblingsLength; ++vertexId) {
+                if (siblings[vertexId] &&
+                    false === callback.call(context, vertexId))
+                {
+                    break;
+                }
+            }
+        },
+        
+        eachEdge: function(callback, context) {
+            var siblings       = this.siblings,
+                siblingsLength = siblings.length,
+                currentSiblings;
+            
+            context || (context = this);
+            
+            for (var vertexId = 0; vertexId < siblingsLength; ++vertexId) {
+                if (siblings[vertexId]) {
+                    currentSiblings = siblings[vertexId];
+
+                    for (var i = 0; i < currentSiblings.length; ++i) {
+                        if (currentSiblings[i] > vertexId &&
+                            false === callback.call(context, vertexId, currentSiblings[i]))
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+        },
+        
+        eachFace: function(callback, context) {
+            var faces       = this.faces,
+                facesLength = faces.length;
+            
+            context || (context = this);
+            
+            for (var faceId = 0; faceId < facesLength; ++faceId) {
+                if (faces[faceId] &&
+                    false === callback.call(context, faceId))
+                {
+                    break;
+                }
+            }
+        },
+        
+        transform: function(matrix) {
+            var transformed = Geometry.clone(this),
+                vectors     = transformed.vectors;
+        
+            transformed.eachVertex(function(vertexId) {
+                vectors[vertexId] = Vector.transform(vectors[vertexId], matrix);
+            });
+            
+            return transformed;
+        },
+        
+        findByVector: function(vectorA, sourceVertex) {
+            var vectors       = this.vectors,
+                foundVertexId = -1;
+                    
+            this.eachVertex(function(vertexId) {
+                if (vertexId !== sourceVertex) {
+                    if (Vector.nearlyEqual(vectors[vertexId], vectorA)) {
+                        foundVertexId = vertexId;
+                        return false;
+                    }
+                }
+            });
+            
+            return foundVertexId;
+        },
+        
+        mergeVertices: function(vertexIdA, vertexIdB) {
+            var siblings = this.siblings,
+                diff     = siblings[vertexIdB].filter(function(siblingVertexId) {
+                    return -1 === siblings[vertexIdA].indexOf(siblingVertexId);
+                });
+            
+            siblings[vertexIdA] = siblings[vertexIdA].concat(diff);
+            
+            this.removeVertex(vertexIdB);
+            
+            return vertexIdA;
+        }
+    };
+    
+    Geometry.buildEmpty = function() {
+        var geometry = new Geometry(0);
+        geometry.addVertex([]);
+        
+        return geometry;
+    };
+    
+    Geometry.clone = function(sourceGeometry) {
+        var targetGeometry = new Geometry(sourceGeometry.dimension),
+            sourceVecotrs  = sourceGeometry.vectors,
+            sourceSiblings = sourceGeometry.siblings,
+            sourceFaces    = sourceGeometry.faces,
+            targetVectors  = targetGeometry.vectors,
+            targetSiblings = targetGeometry.siblings,
+            targetFaces    = targetGeometry.faces,
+            vectorClone, siblingsClone, faceClone;
+        
+        for (var vertexId = 0; vertexId < sourceVecotrs.length; ++vertexId) {
+            vectorClone   = sourceVecotrs [vertexId] ? sourceVecotrs [vertexId].slice(0) : undefined;
+            siblingsClone = sourceSiblings[vertexId] ? sourceSiblings[vertexId].slice(0) : undefined;
+            
+            targetVectors [vertexId] = vectorClone;
+            targetSiblings[vertexId] = siblingsClone;
+        }
+        
+        for (var faceId = 0; faceId < sourceFaces.length; ++faceId) {
+            faceClone = sourceFaces[faceId] ? sourceFaces[faceId].slice(0) : undefined;
+            
+            targetFaces[faceId] = faceClone;
+        }
+        
+        return targetGeometry;        
+    };
+    
+    Geometry.expandByTranslation = function(geometry, from, to) {
+        var siblingsShift = geometry.siblings.length,
+            sourceVector, sourceSiblings,
+            targetVector, targetSiblings, targetVertexId;
+        
+        geometry.eachVertex(function(sourceVertexId) {
+            sourceVector   = geometry.vectors [sourceVertexId];
+            sourceSiblings = geometry.siblings[sourceVertexId],
+            
+            targetVector   = sourceVector.slice(0);
+            targetSiblings = sourceSiblings.slice(0).map(function(siblingVertexId) {
+                return siblingVertexId + siblingsShift;
+            });
+            targetVertexId = geometry.addVertex(targetVector, targetSiblings);
+            
+            sourceVector.push(from);
+            targetVector.push(to);
+            
+            geometry.addEdgeDouble(sourceVertexId, targetVertexId);
+        });
+        
+        ++geometry.dimension;
+        geometry.origin.push((from + to) / 2);
+    };
+    
+    Geometry.expandByRotation = function(geometry, rotations, axisA, axisB, theta) {
+        var matrices        = [],
+            expandDimension = Math.max(axisA, axisB) + 1,
+            sourceVector, sourceSiblings,
+            targetVector, targetSiblings, targetVertexId, 
+            lastVertexId;
+        
+        if (!theta) {
+            theta = Math.radians(360 / (rotations + 1));
+        }
+        
+        while (geometry.origin.length < expandDimension) {
+            geometry.origin.push(0);
+        }
+        
+        // prepare matrices
+        for (var r = 0; r < rotations; ++r) {
+            matrices.push(
+                Matrix.buildRotation(expandDimension, axisA, axisB, theta * (r + 1), geometry.origin)
+            );
+        }
+        
+        // process vertices
+        geometry.eachVertex(function(sourceVertexId) {
+            sourceSiblings = geometry.siblings[sourceVertexId].slice(0);
+            sourceVector   = geometry.vectors [sourceVertexId];
+            
+            // add new dimension
+            while (sourceVector.length < expandDimension) {
+                sourceVector.push(0);
+            }
+            
+            lastVertexId = sourceVertexId;
+            
+            for (var r = 0; r < rotations; ++r) {
+                targetVector   = Vector.transform(sourceVector, matrices[r]);
+                targetSiblings = [];
+                                
+                targetVertexId = geometry.addVertex(targetVector, targetSiblings);
+                
+                geometry.addEdgeDouble(lastVertexId, targetVertexId);
+                
+                lastVertexId = targetVertexId;
+            }
+            
+            geometry.addEdgeDouble(lastVertexId, sourceVertexId);
+        });
+        
+        geometry.dimension = expandDimension;
+        
+        Geometry.reduce (geometry);
+        Geometry.cleanup(geometry);
+    };
+    
+    Geometry.reduce = function(geometry) {
+        var vectors = geometry.vectors,
+            twinVertexId;
+        
+        geometry.eachVertex(function(vertexId) {
+            if (-1 !== (twinVertexId = geometry.findByVector(vectors[vertexId], vertexId))) {
+                geometry.mergeVertices(vertexId, twinVertexId);
+            }
+        });
+    };
+    
+    Geometry.cleanup = function(geometry) {
+        var siblings       = geometry.siblings,
+            shifts         = {},
+            shiftsLength   = 0,
+            deletedCounter = 0;
+    
+        for (var vertexId = 0; vertexId < siblings.length; ++vertexId) {
+            if (!siblings[vertexId]) {
+                ++deletedCounter;
+            }
+            
+            if (deletedCounter) {
+                shifts[vertexId] = vertexId - deletedCounter;
+                ++shiftsLength;
+            }
+        }
+        
+        if (shiftsLength) {
+            var clone = Geometry.clone(geometry),
+                currentVector, currentSiblings,
+                currentFace;
+                
+            geometry.removeVertices();
+
+            clone.eachVertex(function(vertexId) {
+                currentVector   = this.vectors [vertexId];
+                currentSiblings = this.siblings[vertexId];
+                
+                for (var i = 0; i < currentSiblings.length; ++i) {
+                    if (currentSiblings[i] in shifts) {
+                        currentSiblings[i] = shifts[currentSiblings[i]];
+                    }
+                }
+                
+                geometry.addVertex(currentVector, currentSiblings);
+            });
+            
+            geometry.removeFaces();
+            
+            clone.eachFace(function(faceId) {
+                currentFace = this.faces[faceId];
+                
+                for (var i = 0; i < currentFace.length; ++i) {
+                    if (currentFace[i] in shifts) {
+                        currentFace[i] = shifts[currentFace[i]];
+                    }
+                }
+                
+                geometry.addFace(currentFace);
+            });
+        }
+        
+        return geometry;
+    };
+    
+    Geometry.findFaces = function(geometry) {
+        geometry.eachVertex(function(startVertexId) {
+            var excludedClosures = [],
+                planeEquation;
+            
+            Geometry.walk(this, startVertexId, function(currentVertexId, visited) {
+                if (currentVertexId < startVertexId) {
+                    return false;
+                }
+                
+                var vectors  = this.vectors,
+                    siblings = this.siblings;
+                
+                if (visited.length === 3) {
+                    planeEquation = Plane.buildEquation(vectors[visited[0]], vectors[visited[1]], vectors[visited[2]]);
+                }
+                
+                if (visited.length >= 3) {
+                    if (!planeEquation(vectors[currentVertexId])) {
+                        return false;
+                    }
+                }
+                
+                if (visited.length >= 2) {
+                    if (-1 !== siblings[currentVertexId].indexOf(visited[0]) && 
+                        -1 === excludedClosures.indexOf(currentVertexId))
+                    {
+                        this.addFace(visited.concat([currentVertexId]));
+                        excludedClosures.push(visited[1]);
+                        return false;
+                    }
+                }
+            }, this);
+        });
+    };
+        
+    Geometry.walk = function(geometry, vertex, callback, context, visited) {
+        visited || (visited = []);
+        context || (context = geometry);
+        
+        var siblings = geometry.siblings[vertex];
+        
+        visited.push(vertex);
+        
+        for (var i = 0; i < siblings.length; ++i) {
+            if (visited.length > 1 && visited[visited.length - 2] === siblings[i]) {
+                continue;
+            }
+            
+            if (-1    === visited.indexOf(siblings[i]) && 
+                false !== callback.call(context, siblings[i], visited))
+            {
+                Geometry.walk(geometry, siblings[i], callback, context, visited.slice(0));
+            }
+        }
+    };
+    
+    return Geometry;
+});

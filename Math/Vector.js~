@@ -1,0 +1,167 @@
+define(function() {
+    "use strict";
+    
+    var Vector = {
+        clone: function(vector) {
+            return Array.prototype.slice.call(vector, 0);
+        },
+        
+        build: function(size, fill) {
+            var vector = [];
+
+            for (var i = 0; i < size; ++i) {
+                vector[i] = fill;
+            }
+            
+            return vector;
+        },
+        
+        add: function(vectorA, vectorB) {
+            var vector = this.clone(vectorA),
+                size   = vector.length;
+
+            for (var i = 0; i < size; ++i) {
+                vector[i] += vectorB[i];
+            }
+
+            return vector;
+        },
+        
+        subtract: function(vectorA, vectorB) {
+            var vector = this.clone(vectorA),
+                size   = vector.length;
+
+            for (var i = 0; i < size; ++i) {
+                vector[i] -= vectorB[i];
+            }
+
+            return vector;
+        },
+        
+        multiply: function(vectorA, scalarB) {
+            var vector = this.clone(vectorA),
+                size   = vector.length;
+
+            for (var i = 0; i < size; ++i) {
+                vector[i] *= scalarB;
+            }
+
+            return vector;
+        },
+        
+        multiplyMatrix: function(vectorA, matrixB) {
+            var vector = this.build(vectorA.length, 0),
+                size   = vector.length;
+            
+            for (var y = 0; y < size; ++y) {
+                for (var x = 0; x < size; ++x) {
+                    vector[y] += matrixB[y * size + x] * vector[x];
+                }
+            }
+            
+            return vector;
+        },
+        
+        normalize: function(vectorA) {
+            var vector    = this.clone(vectorA),
+                size      = vector.length,
+                squereSum = 0,
+                newLength;
+
+            for (var i = 0; i < size; ++i) {
+                squereSum = vector[i] * vector[i];
+            }
+
+            newLength = 1 / Math.sqrt(squereSum);
+
+            for (var j = 0; j < size; ++j) {
+                vector[j] *= newLength;
+            }
+
+            return vector;
+        },
+        
+        invert: function(vectorA) {
+            var vector = this.clone(vectorA),
+                size   = vector.length;
+
+            for (var i = 0; i < size; ++i) {
+                vector[i] *= -1;
+            }
+
+            return vector;
+        },
+        
+        flatten: function(vectorA) {
+            var vector = this.build(vectorA.length - 1),
+                size   = vector.length;
+            
+            for (var i = 0; i < size; ++i) {
+                vector[i] = vectorA[i];
+            }
+            
+            return vector;
+        },
+        
+        transform: function(vectorA, matrixB, origin) {
+            var vector = this.build(vectorA.length, 0),
+                size   = vector.length;
+
+            if (origin) {
+                vector = this.subtract(vector, origin);
+            }
+                        
+            for (var y = 0; y < size; ++y) {
+                for (var x = 0; x < size; ++x) {
+                    vector[y] += matrixB[y * (size + 1) + x] * vectorA[x];
+                }
+
+                // translations
+                vector[y] += matrixB[(size + 1) * y + size];
+            }
+
+            if (origin) {
+                vector = this.add(vector, origin);
+            }
+
+            return vector;
+        },
+        
+        distance: function(vectorA, vectorB) {
+            var squereSum = 0,
+                size      = vectorA.length;
+
+            if (!vectorB) {
+                for (var i = 0; i < size; ++i) {
+                    squereSum += vectorA[i] * vectorA[i];
+                }        
+            } else {
+                for (var i = 0; i < size; ++i) {
+                    squereSum += (vectorA[i] - vectorB[i]) * (vectorA[i] - vectorB[i]);
+                }
+            }
+
+            return Math.sqrt(squereSum);
+        },
+        
+        cosinus: function(vectorA, vectorB, axisA, axisB) {
+            var scalarMultiply = (vectorA[axisA] * vectorB[axisA] + vectorA[axisB] * vectorB[axisB]),
+                lengthMultiply = Math.sqrt(vectorA[axisA] * vectorA[axisA] + vectorA[axisB] * vectorA[axisB]) * 
+                                 Math.sqrt(vectorB[axisA] * vectorB[axisA] + vectorB[axisB] * vectorB[axisB]);
+            
+            return lengthMultiply === 0 ? NaN : scalarMultiply / lengthMultiply;
+        },
+        
+        sinus: function(vectorA, vectorB, axisA, axisB) {
+            var cosinus = this.cosinus(vectorA, vectorB, axisA, axisB);
+            
+            if (NaN !== cosinus) {
+                return Math.sqrt(1 - cosinus * cosinus);
+            } else {
+                return NaN;
+            }
+        }
+    };
+    
+    return Vector;
+});
