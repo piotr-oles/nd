@@ -2,6 +2,7 @@
 import { Renderer } from './Renderer';
 import { Canvas } from './Canvas';
 import { Camera } from './Primitive/Camera';
+import { Scene } from './Primitive/Scene';
 
 const requestAnimationFrame = (
   window.requestAnimationFrame ||
@@ -28,7 +29,7 @@ export class Animator {
   constructor(
     private canvas: Canvas,
     private renderer: Renderer,
-    private scene,
+    private scene: Scene,
     private camera: Camera,
     private procedure: AnimationProcedure
   ) {}

@@ -25,4 +25,8 @@ export class Scene {
   hasItem(name: string): boolean {
     return !!this.items[name];
   }
+
+  forEachItem(callback: (item, name: string) => void): void {
+    Object.keys(this.items).forEach((name) => callback(this.items[name], name));
+  }
 }
