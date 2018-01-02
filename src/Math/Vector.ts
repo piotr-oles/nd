@@ -1,5 +1,6 @@
 
 import { Matrix } from './Matrix';
+import { Compare } from './Compare';
 
 export type Vector = number[];
 
@@ -254,7 +255,7 @@ export namespace Vector {
     let isNearlyEqual = true;
 
     for (let i = 0; i < size; ++i) {
-      if (!Asm.nearlyEqual(vectorA[i], vectorB[i])) {
+      if (!Compare.nearlyEqual(vectorA[i], vectorB[i])) {
         isNearlyEqual = false;
         break;
       }

@@ -5,10 +5,14 @@ export class HybridCamera extends BasicCamera {
     super();
   }
 
+  getDistance(): number {
+    return this.distance;
+  }
+
   projectPoint(hyperPoint) {
     const point = hyperPoint.slice(0);
 
-    // ortogonal for hyper dimensions
+    // orthographic for hyper dimensions
     for (let d = point.length; d > 3; --d) {
       point.pop();
     }

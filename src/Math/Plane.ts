@@ -1,5 +1,6 @@
 
 import { Vector } from './Vector';
+import { Compare } from './Compare';
 
 export type PlaneEquation = {
   A: Vector;
@@ -20,13 +21,13 @@ export namespace Plane {
     let λR = null;
     let μR = null;
 
-    if (Asm.nearlyEqual(Vector.cosinus(AB, AC), 1)) { // are parallel
+    if (Compare.nearlyEqual(Vector.cosinus(AB, AC), 1.0)) { // are parallel
       return null;
     }
 
     // search for λ non zero row
     for (let i = 0; i < AB.length; ++i) {
-      if (!Asm.nearlyEqual(AB[i], 0)) {
+      if (!Compare.nearlyEqual(AB[i], 0.0)) {
         λR = i;
         break;
       }
@@ -34,7 +35,7 @@ export namespace Plane {
 
     // search for μ non zero row
     for (let i = 0; i < AC.length; ++i) {
-      if (i !== λR && !Asm.nearlyEqual(AC[i], 0)) {
+      if (i !== λR && !Compare.nearlyEqual(AC[i], 0.0)) {
         μR = i;
         break;
       }

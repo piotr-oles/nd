@@ -10,7 +10,7 @@ export class Renderer {
     this.mode = options.mode;
   };
 
-  render(scene: Scene, camera: Camera, canvas: Canvas, persists) {
+  render(scene: Scene, camera: Camera, canvas: Canvas, persists: boolean): void {
     const gl = canvas.getContext();
 
     if (!persists) {
@@ -19,27 +19,27 @@ export class Renderer {
 
     scene.forEachItem((item) => {
       let hyperGeometry = item.matrix ? item.geometry.transform(item.matrix) : item.geometry;
-      let geometry = camera.projectGeometry(hyperGeometry);
+      let flatGeometry = camera.projectGeometry(hyperGeometry);
       let material = item.material;
 
       material.configure(gl);
 
-      material.setUniforms(gl, geometry, hyperGeometry, item, camera, canvas);
-      material.setAttributes(gl, geometry, hyperGeometry, item, camera, canvas);
+      material.setUniforms(gl, flatGeometry, hyperGeometry, item, camera, canvas);
+      material.setAttributes(gl, flatGeometry, hyperGeometry, item, camera, canvas);
 
       // store item vertex indices
       if (!item.buffers.indices) {
         item.buffers['indices'] = gl.createBuffer();
-        item.buffers['indices'].itemsLength = geometry.triangles.length;
+        item.buffers['indices'].itemsLength = flatGeometry.triangles.length;
 
         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, item.buffers['indices']);
-        gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(geometry.triangles), gl.STATIC_DRAW);
+        gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(flatGeometry.triangles), gl.STATIC_DRAW);
       }
 
       gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, item.buffers['indices']);
       gl.drawElements(this.mode, item.buffers['indices'].itemsLength, gl.UNSIGNED_SHORT, 0);
 
-      material.unconfigure(gl);
+      material.rollback(gl);
     });
   }
 }

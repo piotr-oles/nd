@@ -6,6 +6,10 @@ export class PerspectiveCamera extends BasicCamera {
     super();
   }
 
+  getDistance(): number {
+    return this.distance;
+  }
+
   projectPoint(hyperPoint) {
     const point = hyperPoint.slice(0);
 

@@ -49,10 +49,18 @@ export class Canvas {
     this.element.style.width  = width  + 'px';
     this.element.style.height = height + 'px';
 
-    this.width  = deviceWidth;
+    this.width = deviceWidth;
     this.height = deviceHeight;
 
     return this;
+  }
+
+  getWidth(): number {
+    return this.width;
+  }
+
+  getHeight(): number {
+    return this.height;
   }
 
   initContext(options = {}) {
