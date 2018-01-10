@@ -1,11 +1,5 @@
 
 export class Canvas {
-  public readonly shaders = {
-    program:  null,
-    vertex:   null,
-    fragment: null
-  };
-
   private devicePixelRatio: number;
   private context: WebGLRenderingContext;
 
@@ -17,8 +11,8 @@ export class Canvas {
     this.devicePixelRatio = window.devicePixelRatio || 1;
 
     this.setSize(
-        width  || this.element.width,
-        height || this.element.height
+      width  || this.element.width,
+      height || this.element.height
     );
 
     this.initContext({
@@ -64,8 +58,8 @@ export class Canvas {
   }
 
   initContext(options = {}) {
-    this.context = this.element.getContext('webgl',              options) ||
-                   this.element.getContext('experimental-webgl', options);
+    this.context = this.element.getContext('webgl',              options) as WebGLRenderingContext ||
+                   this.element.getContext('experimental-webgl', options) as WebGLRenderingContext;
 
     if (!this.context) {
       throw new Error('WebGL is not supported by this browser.');

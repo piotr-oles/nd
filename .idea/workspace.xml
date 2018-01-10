@@ -2,41 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bfb1ee8-02b6-4957-a8c7-355c773b426e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/demo.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Algorithms/ExpandByPermutationAlgorithm.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Algorithms/ExpandByTranslationAlgorithm.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Algorithms/FindFacesAlgorithm.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Algorithms/TriangulateAlgorithm.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Algorithms/WalkAlgorithm.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Materials/HyperDepthMaterial.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Math/Angle.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Math/Compare.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Math/Geometry.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Primitive/Material.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/component/HyperCanvas.tsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/demo.tsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/template/demo.ejs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/BoundedRenderer.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/primitive/Camera.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/primitive/Item.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/math/Matrix.spec.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/math/Set.spec.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/math/Vector.spec.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/type/earcut.d.ts" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Geometry/ExpandByPermutationAlgorithm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Geometry/ExpandByTranslationAlgorithm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Geometry/FindFacesAlgorithm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Geometry/FindTrianglesAlgorithm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Geometry/IncraseComplexityAlgorithm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Geometry/TriangulateAlgorithm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Geometry/WalkAlgorithm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Camera/BasicCamera.ts" afterPath="$PROJECT_DIR$/src/Camera/BasicCamera.ts" />
-      <change beforePath="$PROJECT_DIR$/src/Camera/HybridCamera.ts" afterPath="$PROJECT_DIR$/src/Camera/HybridCamera.ts" />
-      <change beforePath="$PROJECT_DIR$/src/Camera/PerspectiveCamera.ts" afterPath="$PROJECT_DIR$/src/Camera/PerspectiveCamera.ts" />
+      <change beforePath="$PROJECT_DIR$/app/demo.ts" afterPath="$PROJECT_DIR$/app/view/Demo.tsx" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/ExpandByPermutationAlgorithm.ts" afterPath="$PROJECT_DIR$/src/algorithm/expandByPermutation.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/ExpandByTranslationAlgorithm.ts" afterPath="$PROJECT_DIR$/src/algorithm/expandByTranslation.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/FindFacesAlgorithm.ts" afterPath="$PROJECT_DIR$/src/algorithm/findFaces.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/TriangulateAlgorithm.ts" afterPath="$PROJECT_DIR$/src/algorithm/triangulate.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms/WalkAlgorithm.ts" afterPath="$PROJECT_DIR$/src/algorithm/walk.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Animator.ts" afterPath="$PROJECT_DIR$/src/Animator.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Camera/BasicCamera.ts" afterPath="$PROJECT_DIR$/src/camera/BasicCamera.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Camera/HybridCamera.ts" afterPath="$PROJECT_DIR$/src/camera/HybridCamera.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Camera/OrthographicCamera.ts" afterPath="$PROJECT_DIR$/src/camera/OrthographicCamera.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Camera/PerspectiveCamera.ts" afterPath="$PROJECT_DIR$/src/camera/PerspectiveCamera.ts" />
       <change beforePath="$PROJECT_DIR$/src/Canvas.ts" afterPath="$PROJECT_DIR$/src/Canvas.ts" />
-      <change beforePath="$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Geometries/HyperOctahedronGeometry.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Geometries/HyperQuadrangularPyramidGeometry.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Geometries/HyperSphereGeometry.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Materials/HyperDepthMaterial.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Math/Extend.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Math/Geometry.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Math/Plane.ts" afterPath="$PROJECT_DIR$/src/Math/Plane.ts" />
-      <change beforePath="$PROJECT_DIR$/src/Math/Vector.ts" afterPath="$PROJECT_DIR$/src/Math/Vector.ts" />
-      <change beforePath="$PROJECT_DIR$/src/Primitive/Material.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.ts" afterPath="$PROJECT_DIR$/src/geometry/HyperCubeGeometry.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Materials/HyperDepthMaterial.ts" afterPath="$PROJECT_DIR$/src/material/HyperDepthMaterial.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Angle.ts" afterPath="$PROJECT_DIR$/src/math/Angle.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Compare.ts" afterPath="$PROJECT_DIR$/src/math/Compare.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Geometry.ts" afterPath="$PROJECT_DIR$/src/math/Geometry.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Matrix.ts" afterPath="$PROJECT_DIR$/src/math/Matrix.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Plane.ts" afterPath="$PROJECT_DIR$/src/math/Plane.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Sequence.ts" afterPath="$PROJECT_DIR$/src/math/Sequence.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Set.ts" afterPath="$PROJECT_DIR$/src/math/Set.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Math/Vector.ts" afterPath="$PROJECT_DIR$/src/math/Vector.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Primitive/Camera.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Primitive/Item.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Primitive/Material.ts" afterPath="$PROJECT_DIR$/src/primitive/Material.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Primitive/Point.ts" afterPath="$PROJECT_DIR$/src/primitive/Point.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Primitive/Scene.ts" afterPath="$PROJECT_DIR$/src/primitive/Scene.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Programs/GeometryGenerator.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Promise.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/Renderer.ts" afterPath="$PROJECT_DIR$/src/Renderer.ts" />
+      <change beforePath="$PROJECT_DIR$/src/Thread.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tests/tests.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,101 +60,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HyperDepthMaterial.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Materials/HyperDepthMaterial.ts">
+      <file leaf-file-name="HyperDepthMaterial.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/material/HyperDepthMaterial.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+            <state relative-caret-position="262">
+              <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/demo.ts">
+      <file leaf-file-name="Item.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitive/Item.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="338">
+              <caret line="186" column="33" lean-forward="true" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Primitive/Camera.ts">
+      <file leaf-file-name="Matrix.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/math/Matrix.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="388">
+              <caret line="160" column="4" lean-forward="false" selection-start-line="160" selection-start-column="7" selection-end-line="169" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Renderer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Renderer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoundedRenderer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BoundedRenderer.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo.tsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/Demo.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BasicCamera.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Camera/BasicCamera.ts">
+        <entry file="file://$PROJECT_DIR$/src/camera/BasicCamera.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+            <state relative-caret-position="114">
+              <caret line="6" column="58" lean-forward="false" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/demo.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="PerspectiveCamera.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Camera/PerspectiveCamera.ts">
+        <entry file="file://$PROJECT_DIR$/src/camera/PerspectiveCamera.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="228">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HybridCamera.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Camera/HybridCamera.ts">
+      <file leaf-file-name="triangulate.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/algorithm/triangulate.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrthographicCamera.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Camera/OrthographicCamera.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Material.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Primitive/Material.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Canvas.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Canvas.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="62" column="23" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+            <state relative-caret-position="76">
+              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -151,11 +164,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>initContext</find>
-      <find>data</find>
-      <find>this</find>
       <find>dot</find>
-      <find>cosinus</find>
       <find>cross</find>
       <find>nearlyEqualScalar</find>
       <find>arithmeticAverage</find>
@@ -173,14 +182,22 @@
       <find>IncraseComplexityAlgorithm</find>
       <find>FindTrianglesAlgorithm</find>
       <find>ExpandByPermutationAlgorithm</find>
-      <find>shaders</find>
       <find>optimize</find>
       <find>inject</find>
       <find>findByVector</find>
       <find>reduce</find>
+      <find>this as this</find>
+      <find>cosinus</find>
+      <find>shaders</find>
+      <find>Canvas</find>
+      <find>compile</find>
+      <find>buildMinor</find>
+      <find>triangulate</find>
+      <find>console.lo</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>this</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/Math</dir>
@@ -194,50 +211,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/WebGL.js" />
-        <option value="$PROJECT_DIR$/src/WebGL.ts" />
-        <option value="$PROJECT_DIR$/src/Thread.ts" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/src/Cameras/BasicCamera.ts" />
-        <option value="$PROJECT_DIR$/src/Cameras/StereographicCamera.js" />
-        <option value="$PROJECT_DIR$/src/Cameras/PerspectiveCamera.ts" />
-        <option value="$PROJECT_DIR$/src/Primitives/Point.ts" />
-        <option value="$PROJECT_DIR$/src/Cameras/Camera.ts" />
-        <option value="$PROJECT_DIR$/src/Cameras/OrtographicCamera.ts" />
-        <option value="$PROJECT_DIR$/src/Cameras/OrthographicCamera.ts" />
-        <option value="$PROJECT_DIR$/src/Cameras/HybridCamera.ts" />
-        <option value="$PROJECT_DIR$/src/Primitive/Item.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Matrix.js" />
-        <option value="$PROJECT_DIR$/src/Math/Matrix.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Sequence.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Set.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Extend.js" />
-        <option value="$PROJECT_DIR$/src/Animator.ts" />
-        <option value="$PROJECT_DIR$/src/Primitive/Scene.ts" />
-        <option value="$PROJECT_DIR$/src/Math/nearlyEqual.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Angle.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Utils.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Compare.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Vector.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Geometry.js" />
-        <option value="$PROJECT_DIR$/src/Math/Plane.ts" />
-        <option value="$PROJECT_DIR$/src/Camera/BasicCamera.ts" />
-        <option value="$PROJECT_DIR$/src/Algorithms/ExpandByPermutationAlgorithm.js" />
         <option value="$PROJECT_DIR$/src/Algorithms/WalkAlgorithm.ts" />
         <option value="$PROJECT_DIR$/src/Algorithms/TriangulateAlgorithm.ts" />
-        <option value="$PROJECT_DIR$/src/Algorithms/FindFacesAlgorithm.ts" />
-        <option value="$PROJECT_DIR$/src/Math/Geometry.ts" />
-        <option value="$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.ts" />
-        <option value="$PROJECT_DIR$/src/Algorithms/ExpandByTranslationAlgorithm.ts" />
-        <option value="$PROJECT_DIR$/src/Algorithms/ExpandByPermutationAlgorithm.ts" />
-        <option value="$PROJECT_DIR$/src/Renderer.ts" />
-        <option value="$PROJECT_DIR$/src/Primitive/Material.ts" />
-        <option value="$PROJECT_DIR$/src/Canvas.ts" />
         <option value="$PROJECT_DIR$/src/Camera/HybridCamera.ts" />
         <option value="$PROJECT_DIR$/src/Camera/PerspectiveCamera.ts" />
+        <option value="$PROJECT_DIR$/src/Math/Angle.ts" />
+        <option value="$PROJECT_DIR$/src/Primitive/Scene.ts" />
+        <option value="$PROJECT_DIR$/src/Algorithms/ExpandByPermutationAlgorithm.ts" />
+        <option value="$PROJECT_DIR$/src/Algorithms/ExpandByTranslationAlgorithm.ts" />
+        <option value="$PROJECT_DIR$/src/Algorithms/FindFacesAlgorithm.ts" />
+        <option value="$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.ts" />
         <option value="$PROJECT_DIR$/src/Materials/HyperDepthMaterial.ts" />
+        <option value="$PROJECT_DIR$/src/Math/Sequence.ts" />
+        <option value="$PROJECT_DIR$/src/Primitive/Material.ts" />
+        <option value="$PROJECT_DIR$/app/template/client.ejs" />
+        <option value="$PROJECT_DIR$/app/demo.ts" />
+        <option value="$PROJECT_DIR$/src/Primitive/Item.ts" />
+        <option value="$PROJECT_DIR$/src/Math/Vector.ts" />
+        <option value="$PROJECT_DIR$/src/Math/Set.ts" />
+        <option value="$PROJECT_DIR$/src/Camera/BasicCamera.ts" />
+        <option value="$PROJECT_DIR$/src/Primitive/Camera.ts" />
+        <option value="$PROJECT_DIR$/src/Math/Geometry.ts" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/algorithm/expandByPermutation.ts" />
+        <option value="$PROJECT_DIR$/src/algorithm/expandByTranslation.ts" />
+        <option value="$PROJECT_DIR$/src/algorithm/walk.ts" />
+        <option value="$PROJECT_DIR$/app/component/Renderer.tsx" />
+        <option value="$PROJECT_DIR$/app/component/HyperAnimatedCanvas.tsx" />
+        <option value="$PROJECT_DIR$/src/BoundedRenderer.ts" />
+        <option value="$PROJECT_DIR$/app/component/HyperCanvas.tsx" />
+        <option value="$PROJECT_DIR$/src/Canvas.ts" />
+        <option value="$PROJECT_DIR$/src/primitive/Material.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/tests/math/Matrix.spec.ts" />
+        <option value="$PROJECT_DIR$/test/math/Matrix.spec.ts" />
+        <option value="$PROJECT_DIR$/test/math/Vector.spec.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/math/Set.ts" />
+        <option value="$PROJECT_DIR$/test/math/Set.spec.ts" />
+        <option value="$PROJECT_DIR$/src/geometry/HyperCubeGeometry.ts" />
+        <option value="$PROJECT_DIR$/type/earcut.d.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/Animator.ts" />
+        <option value="$PROJECT_DIR$/src/Renderer.ts" />
+        <option value="$PROJECT_DIR$/src/algorithm/findFaces.ts" />
+        <option value="$PROJECT_DIR$/src/math/Matrix.ts" />
+        <option value="$PROJECT_DIR$/src/primitive/Item.ts" />
+        <option value="$PROJECT_DIR$/src/algorithm/triangulate.ts" />
+        <option value="$PROJECT_DIR$/app/demo.tsx" />
+        <option value="$PROJECT_DIR$/src/camera/PerspectiveCamera.ts" />
+        <option value="$PROJECT_DIR$/src/material/HyperDepthMaterial.ts" />
+        <option value="$PROJECT_DIR$/app/view/Demo.tsx" />
       </list>
     </option>
   </component>
@@ -255,10 +279,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="34" />
-    <option name="y" value="24" />
-    <option name="width" value="1871" />
-    <option name="height" value="1176" />
+    <option name="x" value="1968" />
+    <option name="y" value="-11" />
+    <option name="width" value="1873" />
+    <option name="height" value="1212" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -291,54 +315,84 @@
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Algorithms" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="algorithm" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Camera" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="camera" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Geometries" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="geometry" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Materials" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="material" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Math" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="math" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Primitive" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="math" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Set.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Programs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="primitive" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="nd" type="b2602c69:ProjectViewProjectNode" />
               <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="math" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="type" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -351,8 +405,15 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v7.10.1/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/poles/projects/nd/app/view/Demo.tsx" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/component" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Algorithms" />
       <recent name="$PROJECT_DIR$/src/Primitives" />
@@ -390,30 +451,34 @@
       <workItem from="1511168252682" duration="712000" />
       <workItem from="1511216059086" duration="1273000" />
       <workItem from="1511249109421" duration="600000" />
-      <workItem from="1514926201298" duration="8085000" />
+      <workItem from="1514926201298" duration="8450000" />
+      <workItem from="1515058119025" duration="36000" />
+      <workItem from="1515107322540" duration="3554000" />
+      <workItem from="1515141907169" duration="10000" />
+      <workItem from="1515527878859" duration="17251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31578000" />
+    <option name="totallyTimeSpent" value="52794000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="-4" width="1871" height="1204" extended-state="6" />
+    <frame x="1968" y="-11" width="1873" height="1212" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26790595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900834" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993513" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20448333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -424,6 +489,45 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/Animator.js" />
+        <option value="$PROJECT_DIR$/src/Renderer.js" />
+        <option value="$PROJECT_DIR$/src/WebGL.js" />
+        <option value="$PROJECT_DIR$/src/BoundedRenderer.js" />
+        <option value="$PROJECT_DIR$/src/Canvas.js" />
+        <option value="$PROJECT_DIR$/test/math/Vector.spec.js" />
+        <option value="$PROJECT_DIR$/test/math/Matrix.spec.js" />
+        <option value="$PROJECT_DIR$/test/math/Set.spec.js" />
+        <option value="$PROJECT_DIR$/src/math/Vector.js" />
+        <option value="$PROJECT_DIR$/src/math/Sequence.js" />
+        <option value="$PROJECT_DIR$/src/math/Plane.js" />
+        <option value="$PROJECT_DIR$/src/math/Geometry.js" />
+        <option value="$PROJECT_DIR$/src/math/Matrix.js" />
+        <option value="$PROJECT_DIR$/src/math/Compare.js" />
+        <option value="$PROJECT_DIR$/src/math/Angle.js" />
+        <option value="$PROJECT_DIR$/src/math/Set.js" />
+        <option value="$PROJECT_DIR$/app/demo.js" />
+        <option value="$PROJECT_DIR$/app/view/Demo.js" />
+        <option value="$PROJECT_DIR$/src/geometry/HyperCubeGeometry.js" />
+        <option value="$PROJECT_DIR$/src/primitive/Material.js" />
+        <option value="$PROJECT_DIR$/src/primitive/Camera.js" />
+        <option value="$PROJECT_DIR$/src/primitive/Item.js" />
+        <option value="$PROJECT_DIR$/src/primitive/Scene.js" />
+        <option value="$PROJECT_DIR$/src/primitive/Point.js" />
+        <option value="$PROJECT_DIR$/src/algorithm/triangulate.js" />
+        <option value="$PROJECT_DIR$/src/algorithm/expandByPermutation.js" />
+        <option value="$PROJECT_DIR$/src/algorithm/findFaces.js" />
+        <option value="$PROJECT_DIR$/src/algorithm/expandByTranslation.js" />
+        <option value="$PROJECT_DIR$/src/algorithm/walk.js" />
+        <option value="$PROJECT_DIR$/src/camera/PerspectiveCamera.js" />
+        <option value="$PROJECT_DIR$/src/camera/HybridCamera.js" />
+        <option value="$PROJECT_DIR$/src/camera/OrthographicCamera.js" />
+        <option value="$PROJECT_DIR$/src/camera/BasicCamera.js" />
+        <option value="$PROJECT_DIR$/src/material/HyperDepthMaterial.js" />
+        <option value="$PROJECT_DIR$/app/component/HyperCanvas.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -433,103 +537,23 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/WebGL.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2223">
-          <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Thread.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/nearlyEqual.ts" />
-    <entry file="file://$PROJECT_DIR$/src/Math/Extend.js" />
-    <entry file="file://$PROJECT_DIR$/src/Math/Vector.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4142">
-          <caret line="218" column="19" lean-forward="false" selection-start-line="218" selection-start-column="19" selection-end-line="218" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primitive/Material.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2508">
-          <caret line="132" column="6" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="132" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1206" column="4" lean-forward="false" selection-start-line="1206" selection-start-column="4" selection-end-line="1206" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primitive/Point.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/ExpandByPermutationAlgorithm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="6" lean-forward="true" selection-start-line="5" selection-start-column="47" selection-end-line="34" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Geometries/HyperOctahedronGeometry.js">
+    <entry file="file://$PROJECT_DIR$/src/Promise.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Geometries/HyperQuadrangularPyramidGeometry.js">
+    <entry file="file://$PROJECT_DIR$/src/primitive/Item.js" />
+    <entry file="file://$PROJECT_DIR$/src/camera/HybridCamera.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="152">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Geometries/HyperSphereGeometry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1271">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/Matrix.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2715">
-          <caret line="75" column="32" lean-forward="false" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/Sequence.ts">
+    <entry file="file://$PROJECT_DIR$/src/camera/OrthographicCamera.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -537,135 +561,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/Angle.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/Compare.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primitive/Scene.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Animator.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/TriangulateAlgorithm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/IncraseComplexityAlgorithm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/FindTrianglesAlgorithm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/ExpandByTranslationAlgorithm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/WalkAlgorithm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="21" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/FindFacesAlgorithm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="71" column="9" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="4" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="36" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/Geometry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/Geometry.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4035">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Geometries/HyperCubeGeometry.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Materials/HyperDepthMaterial.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1632">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/Set.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Math/Plane.ts">
+    <entry file="file://$PROJECT_DIR$/src/math/Plane.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-340">
           <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
@@ -673,50 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/TriangulateAlgorithm.ts">
+    <entry file="file://$PROJECT_DIR$/src/Thread.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/FindFacesAlgorithm.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/ExpandByTranslationAlgorithm.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/ExpandByPermutationAlgorithm.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms/WalkAlgorithm.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primitive/Item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1615">
-          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="48" />
+        <state relative-caret-position="266">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -729,7 +585,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Promise.js">
+    <entry file="file://$PROJECT_DIR$/src/WebGL.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -737,90 +593,346 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Renderer.ts">
+    <entry file="file://$PROJECT_DIR$/src/primitive/Camera.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        <state relative-caret-position="114">
+          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/demo.ts">
+    <entry file="file://$PROJECT_DIR$/src/primitive/Point.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="19">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Compare.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state relative-caret-position="114">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primitive/Material.ts">
+    <entry file="file://$PROJECT_DIR$/src/algorithm/expandByPermutation.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="57">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/demo.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/component/HyperCanvas.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="2659" column="14" lean-forward="false" selection-start-line="2659" selection-start-column="14" selection-end-line="2659" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Canvas.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="62" column="23" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+        <state relative-caret-position="-209">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Primitive/Camera.ts">
+    <entry file="file://$PROJECT_DIR$/src/algorithm/expandByTranslation.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="38">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Camera/BasicCamera.ts">
+    <entry file="file://$PROJECT_DIR$/src/primitive/Material.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        <state relative-caret-position="836">
+          <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Camera/PerspectiveCamera.ts">
+    <entry file="file://$PROJECT_DIR$/app/component/HyperCanvas.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="475">
+          <caret line="34" column="23" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Camera/HybridCamera.ts">
+    <entry file="file://$PROJECT_DIR$/src/math/Angle.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="171">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Camera/OrthographicCamera.ts">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="-125">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Materials/HyperDepthMaterial.ts">
+    <entry file="file://$PROJECT_DIR$/test/math/Matrix.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        <state relative-caret-position="2318">
+          <caret line="122" column="18" lean-forward="false" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="324" column="12" lean-forward="true" selection-start-line="324" selection-start-column="12" selection-end-line="324" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/math/Vector.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="90" column="15" lean-forward="false" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Set.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2235">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338">
+          <caret line="68" column="10" lean-forward="false" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Set.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/math/Set.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="91" lean-forward="false" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/type/earcut.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Vector.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="225" column="41" lean-forward="false" selection-start-line="225" selection-start-column="41" selection-end-line="225" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/geometry/HyperCubeGeometry.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Sequence.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="14970" column="4" lean-forward="false" selection-start-line="14970" selection-start-column="4" selection-end-line="14970" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitive/Scene.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/walk.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/findFaces.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Geometry.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="81" column="2" lean-forward="false" selection-start-line="81" selection-start-column="2" selection-end-line="81" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Matrix.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="160" column="4" lean-forward="false" selection-start-line="160" selection-start-column="7" selection-end-line="169" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitive/Item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="186" column="33" lean-forward="true" selection-start-line="186" selection-start-column="33" selection-end-line="186" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/triangulate.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/demo.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camera/BasicCamera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="58" lean-forward="false" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camera/PerspectiveCamera.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Renderer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoundedRenderer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/material/HyperDepthMaterial.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="57" column="28" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Demo.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
           <folding />
         </state>
       </provider>

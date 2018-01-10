@@ -1,9 +1,4 @@
 // shim layer
-import { Renderer } from './Renderer';
-import { Canvas } from './Canvas';
-import { Camera } from './Primitive/Camera';
-import { Scene } from './Primitive/Scene';
-
 const requestAnimationFrame = (
   window.requestAnimationFrame ||
   window.webkitRequestAnimationFrame ||
@@ -20,39 +15,31 @@ const cancelAnimationFrame = (
   ((id) => window.clearTimeout(id))
 );
 
-export type AnimationProcedure = () => void;
+export type Tick = () => void;
 
 export class Animator {
-  private index: number = 0;
-  private requestId: number = null;
+  private tickIndex: number = 0;
+  private tickRequestId: number = null;
 
   constructor(
-    private canvas: Canvas,
-    private renderer: Renderer,
-    private scene: Scene,
-    private camera: Camera,
-    private procedure: AnimationProcedure
+    private tick: Tick
   ) {}
 
   start() {
-    this.tick();
+    this.nextTick();
   }
 
   stop() {
-    if (null !== this.requestId) {
-      cancelAnimationFrame(this.requestId);
-      this.requestId = null;
+    if (null !== this.tickRequestId) {
+      cancelAnimationFrame(this.tickRequestId);
+      this.tickRequestId = null;
     }
   }
 
-  tick = () => {
-    this.requestId = requestAnimationFrame(this.tick);
+  nextTick = () => {
+    this.tickRequestId = requestAnimationFrame(this.nextTick);
 
-    this.procedure();
+    this.tick();
+    ++this.tickIndex;
   };
-
-  frame(persist: boolean) {
-    this.renderer.render(this.scene, this.camera, this.canvas, persist);
-    ++this.index;
-  }
 }
