@@ -29,7 +29,7 @@ export class Demo extends Component {
     this.scene.addItem(
       'cube',
       new Item(
-        new HyperCubeGeometry(8, 80),
+        new HyperCubeGeometry(6, 80),
         new HyperDepthMaterial({
           hyperR: 4,
           hyperG: 5,
@@ -64,10 +64,7 @@ export class Demo extends Component {
 
   componentDidMount() {
     this.renderer.bindCanvas(this.canvas);
-    //this.renderer.render();
     this.animator.start();
-    //setTimeout(() => this.animator.stop(), 0);
-
   }
 
   render() {

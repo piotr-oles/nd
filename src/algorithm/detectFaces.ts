@@ -4,7 +4,7 @@ import { Set } from '../math/Set';
 import { triangulate } from './triangulate';
 import { walk } from './walk';
 
-export function findFaces(geometry: Geometry): void {
+export function detectFaces(geometry: Geometry): void {
   geometry.clearTriangles();
 
   geometry.eachVertex((startVertexId) => {

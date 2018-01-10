@@ -1,5 +1,5 @@
 import { expandByTranslation } from '../algorithm/expandByTranslation';
-import { findFaces } from '../algorithm/findFaces';
+import { detectFaces } from '../algorithm/detectFaces';
 import { Geometry } from '../math/Geometry';
 import { Vector } from '../math/Vector';
 
@@ -17,6 +17,6 @@ export class HyperCubeGeometry extends Geometry {
       expandByTranslation(this, -size, size);
     }
 
-    findFaces(this);
+    detectFaces(this);
   }
 }
