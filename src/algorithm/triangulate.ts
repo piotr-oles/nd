@@ -14,7 +14,7 @@ export function triangulate(face: VertexId[], vectors: Vector[], dimension: numb
   return triangles;
 }
 
-
+// TODO: fix some missing faces
 export function triangulatev2(face: VertexId[], vectors: Vector[], dimension: number): Triangle[] {
   // perform triangulation
   const flatTriangles: number[] = earcut(
