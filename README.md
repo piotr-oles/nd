@@ -46,7 +46,7 @@ Jest ona rozszerzeniem klasy `Geometry` i ułatwia generowanie n-wymiarowego sze
 
 ### material
 Zawiera definicje materiałów. Obecnie jest tylko jeden - `HyperDepthMaterial`
-Jest ona rozszerzeniem klasy `Material` i zarządza ona fragment i vertex shaderem.
+Jest on rozszerzeniem klasy `Material` i zarządza fragment i vertex shaderem.
 
 ### math
 Zawiera niezbędne narzędzia matematyczne
@@ -71,8 +71,8 @@ Zawiera podstawowe klasy/interfejsy
 
 ### /
  * `Aniamtor` - zarządza cyklicznym wywoływaniem funkcji renderującej
-  * `Renderer` - komponent który zarządza renderowanie sceny.
-  * `BoundedRenderer` - podobny do routera, z różnicą taką, że niektóre elementy
-                        są przypisane do renderera i nie trzeba ich podawać ręcznie.                     
-  * `Canvas - ozdabia Canvas, aby uprościć nietkóry fragmenty kodu
+  * `Renderer` - komponent który zarządza renderowaniem sceny.
+  * `BoundedRenderer` - podobny do `Renderer`, z taką różnicą, że niektóre elementy
+                        są przypisane do renderera i nie trzeba ich przekazywać przy każdym wywołaniu funkcji render.                     
+  * `Canvas` - ozdabia Canvas, aby uprościć nietkóre fragmenty kodu
   * `WebGL` - zawiera stałe WebGL-a aby były dostępne w czasie wykonania
